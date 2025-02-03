@@ -1,0 +1,14 @@
+{
+  "name": "uni-resolver-driver-did-trustgrid",
+  "version": "1.0.0",
+  "description": "universal trustgrid did resolver driver",
+  "main": "index.js",
+  "repository": "git@github.com:tgrid-usa/uni-resolver-driver-did-trustgrid.git",
+  "author": "Akshay Kurhekar",
+  "license": "MIT",
+  "scripts": {
+    "prestart":"yarn",
+    "start":"node index.js",
+    "dev":"nodemon index.js"
+  }
+}
