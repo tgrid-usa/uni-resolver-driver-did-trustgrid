@@ -7,8 +7,11 @@
   "author": "Akshay Kurhekar",
   "license": "MIT",
   "scripts": {
-    "prestart":"yarn",
-    "start":"node index.js",
-    "dev":"nodemon index.js"
+    "prestart": "yarn",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
   }
 }
