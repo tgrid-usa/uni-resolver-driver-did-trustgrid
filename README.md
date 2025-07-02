@@ -2,7 +2,7 @@ TrustGrid DID Resolver Driver
 
 # Universal Resolver Driver: trustgrid
 
-This is an trustgrid [Universal Resolver](https://github.com/decentralized-identity/universal-resolver/) driver for fictional **did:trustgrid** identifiers.
+This is an trustgrid [Trustgrid Universal Resolver](https://github.com/tgrid-usa/uni-resolver-driver-did-trustgrid/) driver for fictional **did:tgrid** identifiers.
 
 ## Specifications
 
@@ -11,22 +11,23 @@ This is an trustgrid [Universal Resolver](https://github.com/decentralized-ident
 ## trustgrid DIDs
 
 ```
-did:trustgrid:0000000000123456
-did:trustgrid:0000000000456789
+did:tgrid:trustgrid:dev:QjA1qdXKmxzgK4u8mFoBpF
+did:tgrid:trustgrid:QjA1qdXKmxzgK4u8mFoBpF
+did:tgrid:QjA1qdXKmxzgK4u8mFoBpF
 ```
 
 ## Build and Run (Docker)
 
 ```
-docker build -f ./docker/Dockerfile . -t trustgridorg/uni-resolver-driver-did-trustgrid
-docker run -p 8080:8080 trustgridorg/uni-resolver-driver-did-trustgrid
-curl -X GET http://localhost:8080/1.0/identifiers/did:trustgrid:0000000000123456
+docker build -f ./docker/Dockerfile . -t trustgrid01/uni-resolver-driver-did-tgrid
+docker run -p 8080:8080 trustgrid01/uni-resolver-driver-did-tgrid
+curl -X GET http://localhost:8080/1.0/identifiers/did:tgrid:trustgrid:dev:QjA1qdXKmxzgK4u8mFoBpF
 ```
 
 ## Build and Run (NodeJS)
 
 ```
-npm start
+yarn start
 ```
 
 ## Driver Environment Variables
